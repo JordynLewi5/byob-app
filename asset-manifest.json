@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/byob-app/static/css/main.6a763a21.css",
-    "main.js": "/byob-app/static/js/main.1e913abc.js",
+    "main.js": "/byob-app/static/js/main.015621e6.js",
     "index.html": "/byob-app/index.html",
     "main.6a763a21.css.map": "/byob-app/static/css/main.6a763a21.css.map",
-    "main.1e913abc.js.map": "/byob-app/static/js/main.1e913abc.js.map"
+    "main.015621e6.js.map": "/byob-app/static/js/main.015621e6.js.map"
   },
   "entrypoints": [
     "static/css/main.6a763a21.css",
-    "static/js/main.1e913abc.js"
+    "static/js/main.015621e6.js"
   ]
 }
