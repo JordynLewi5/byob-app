@@ -1,0 +1,25 @@
+html {
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: var(--primary-color);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+:root {
+    --primary-color: #0e0e0e;
+    --secondary-color: #8a0dff;
+    --secondary-lavendar: #ba82ff;
+    --light-secondary-color: #c9a0ff;
+    --light-secondary-lavendar: #e0c6ff;
+    --light-primary-color: #f0e9ff;
+    --primary-text-color: #fff;
+    --secondary-text-color: #000;
+    --border-color: #ccc;
+}

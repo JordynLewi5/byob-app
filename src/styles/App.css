@@ -1,0 +1,408 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    font-size: calc(10px + 2vmin);
+    text-align: center;
+    overflow: auto;
+    padding: 100px 0;
+}
+
+.home-title {
+    margin-bottom: 6rem;
+    border-radius: 200px;
+    padding: 10px 50px;
+}
+
+.home-title h1 {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+h1, h2, h3, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid var(--light-secondary-color);
+
+}
+
+.search-space {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    width: 80%;
+}
+
+.search-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.search-bar {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 1000px;
+    border: none;
+    padding: 10px;
+    border-radius: 100px;
+    background: linear-gradient(180deg, var(--secondary-lavendar) 0, var(--secondary-color) 100%);
+    box-shadow: 10px 5px 15px #0300045b, -5px -5px 15px #db8dff6a;
+    overflow: hidden;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 7px 20px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 100px;
+}
+
+button {
+    padding: 10px;
+    height: 42px;
+    width: auto;
+    min-width: 42px;
+    border: none;
+    border-radius: 100px;
+    background-color: var(--secondary-lavendar);
+    color: white;
+    overflow: hidden;
+    transition: all 0.1s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--light-secondary-color);
+    color: var(--secondary-color);
+}
+
+button img {
+    height: 100%;
+    width: auto;
+}
+
+.filters-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    /* background-color: var(--secondary-color); */
+    max-width: 1000px;
+    border-radius: 20px;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1000px;
+    gap: 7px;
+    box-shadow: inset 10px 5px 15px #03000427, inset -5px -5px 20px #946ca41c;
+    border-radius: 20px;
+    padding: 20px 40px;
+    background-color: #0000000b;
+}
+
+.filter {
+    /* background-color: #0000002d; */
+    border-radius: 10px;
+    padding: 10px 20px;
+    padding-bottom: 7px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.filter h6 {
+    width: 165px;
+    text-align: start;
+    padding-bottom: 5px;
+}
+.filter .filter-slider-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+.filter .filter-slider-container .range-values {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter .bio-bar {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 1000px;
+    border: none;
+    padding: 5px;
+    border-radius: 100px;
+    background: linear-gradient(180deg, var(--secondary-lavendar) 0, var(--light-secondary-color) 100%);
+    overflow: hidden;
+}
+
+.filter .bio-bar input {
+    flex: 1;
+    padding: 5px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 100px;
+}
+
+.results-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    height: 700px;
+    background-color: #0000001e;
+    border-radius: 15px;
+    box-shadow: inset 10px 5px 15px #03000422, inset -5px -5px 15px #9951bb1b;
+    overflow: hidden;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* gap: 1rem; */
+    width: 100%;
+    overflow-y: scroll;
+    min-height: 700px;
+}
+
+.result-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 10px;
+    width: 90%;
+    max-width: 1000px;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: var(--secondary-color);
+    height: 70px;
+    font-size: 1rem;
+    box-shadow: 0 0 10px #00000035;
+    transition: all 0.1s ease;
+    text-overflow: ellipsis;
+}
+
+.result-item:hover {
+    transform: scale(1.005);
+}
+ 
+.result-item .profile-names {
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-between;
+    align-items: start;
+    flex: .4;
+}
+
+.result-item .profile-names p {
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+    text-overflow: ellipsis;
+}
+
+.result-item .profile-bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex: 1;
+    text-overflow: ellipsis;
+
+}
+
+.result-item .profile-bio p {
+    font-size: 0.8rem;
+    margin: 0;
+    text-overflow: ellipsis;
+}
+
+.result-item .button button {
+    padding: 6px 8px;
+    height: 25px;
+    width: auto;
+    min-width: 42px;
+    border: none;
+    border-radius: 100px;
+    background-color: var(--secondary-lavendar);
+    color: white;
+    overflow: hidden;
+    transition: all 0.1s ease-in-out;
+}
+
+.result-item .button button:hover {
+    background-color: var(--light-secondary-color);
+    color: var(--secondary-color);
+}
+
+.user-profile {
+    color: white;
+    background: linear-gradient(180deg, var(--secondary-color) 0%, var(--secondary-lavendar) 100%);
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.user-profile .top-bar {
+    display: flex;
+    justify-self: start;
+    align-self: start;
+}
+
+.result-item .button button:hover {
+    background-color: var(--light-secondary-color);
+    color: var(--secondary-color);
+}
+
+.user-profile .top-bar button {
+    margin: 40px;
+    padding: 6px 8px;
+    height: 25px;
+    width: auto;
+    min-width: 42px;
+    border: none;
+    border-radius: 100px;
+    background-color: var(--secondary-lavendar);
+    color: white;
+    overflow: hidden;
+    transition: all 0.1s ease-in-out;
+}
+
+.user-profile .top-bar button:hover {
+    background-color: var(--light-secondary-color);
+    color: var(--secondary-color);
+}
+
+.user-profile .profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    padding: 20px 40px;
+    border-radius: 2dvh;
+    color: white;
+    /* box-shadow: 0 0 10px #00000035; */
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.user-profile .profile-header .profile-names {
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-profile .profile-header .follow-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.user-profile .profile-posts {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    gap: 20px;
+    /* width: fit-content; */
+    max-width: 1000px;
+    padding: 20px 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.878);
+    color: var(--primary-color);
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.user-profile .profile-posts .post {
+    /* width: 200px; */
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    /* max-height: 300px; */
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    flex: 1;
+    box-shadow: 0 0 10px #00000035;
+}
+
+.user-profile .profile-header button {
+    padding: 0 20px;
+    width: auto;
+    font-size: 1rem;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f155
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 5px;
+    /* width: 5px; */
+}
