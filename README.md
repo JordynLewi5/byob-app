@@ -18,10 +18,15 @@ Each user can be clicked on to pull up their profile. In the profile screen, you
 
 # File Structure
 The structure of the project can be broken down into 4 main sections:
+
 `public` - contains any images, data, etc. and the root index.html file
+
 `src` - contains the actual code, specifically the App.js and index.js files for establishing the root components, as well as the following directories:
+
 `js` - contains the JavaScript code for rendering and performing any operations for the app.
+
 `styles` - contains the CSS files that style the app.
+
 
 # Below is a guide to get the code running on your local machine.
 
