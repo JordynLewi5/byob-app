@@ -1,3 +1,30 @@
+# Social Media Insights Engine
+
+The project I selected was the Social Media Insights Engine. It consists of a search bar for searching for profile by both `name` and `username`. 
+
+The first filter is a keyword search for profile bios.
+
+Located directly below that is a set of sliding range filters for the following attributes:
+`followers`
+`average views`
+`average likes`
+`average comments`
+`average shares`
+`average saves`
+
+Then the list of users will be generated below in a scrollable block.
+
+Each user can be clicked on to pull up their profile. In the profile screen, you will find basic information about the user as well as a generated list of their posts with links to each post.
+
+# File Structure
+The structure of the project can be broken down into 4 main sections:
+`public` - contains any images, data, etc. and the root index.html file
+`src` - contains the actual code, specifically the App.js and index.js files for establishing the root components, as well as the following directories:
+`js` - contains the JavaScript code for rendering and performing any operations for the app.
+`styles` - contains the CSS files that style the app.
+
+# Below is a guide to get the code running on your local machine.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +95,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# byob-app
