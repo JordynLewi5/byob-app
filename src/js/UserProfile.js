@@ -39,10 +39,8 @@ function UserProfile() {
             <div className="profile-posts">
                 {profile.posts_info.length > 0 ? profile.posts_info.map(post => (
                     <div key={post.post_id} className="post">
-                        <p>{post.description}</p>
-                        <br />
+                        <p className="post-description">{post.description}</p>
                         <button onClick={() => window.open(post.url)}>View Post →</button>
-                        <br />
                         <hr />
                         <p>👀 {post.views.toLocaleString()}</p>
                         <p>❤️ {post.likes.toLocaleString()}</p>

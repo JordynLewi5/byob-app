@@ -226,7 +226,6 @@ button img {
     font-size: 1rem;
     box-shadow: 0 0 10px #00000035;
     transition: all 0.1s ease;
-    text-overflow: ellipsis;
 }
 
 .result-item:hover {
@@ -245,7 +244,6 @@ button img {
     font-size: 0.9rem;
     margin: 0;
     padding: 0;
-    text-overflow: ellipsis;
 }
 
 .result-item .profile-bio {
@@ -255,14 +253,12 @@ button img {
     align-items: center;
     gap: 5px;
     flex: 1;
-    text-overflow: ellipsis;
 
 }
 
 .result-item .profile-bio p {
     font-size: 0.8rem;
     margin: 0;
-    text-overflow: ellipsis;
 }
 
 .result-item .button button {
@@ -285,7 +281,7 @@ button img {
 
 .user-profile {
     color: white;
-    background: linear-gradient(180deg, var(--secondary-color) 0%, var(--secondary-lavendar) 100%);
+    background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
@@ -366,8 +362,7 @@ button img {
     max-width: 1000px;
     padding: 20px 20px;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.878);
-    color: var(--primary-color);
+    background-color: var(--primary-color);
     flex-wrap: wrap;
     margin: 30px;
 }
@@ -387,6 +382,15 @@ button img {
     box-shadow: 0 0 10px #00000035;
 }
 
+.user-profile .profile-posts .post .post-description {
+    height: 100px;
+    overflow-y: auto;
+}
+
+.user-profile .profile-posts .post button {
+    margin: 20px 0;
+}
+
 .user-profile .profile-header button {
     padding: 0 20px;
     width: auto;
@@ -394,15 +398,16 @@ button img {
 }
 
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f155
+    background: #f1f1f155;
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
     background: #ffffff;
-    border-radius: 5px;
+    border-radius: 4px;
     /* width: 5px; */
 }
