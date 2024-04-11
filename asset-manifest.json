@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/byob-app/static/css/main.40ef0cb8.css",
-    "main.js": "/byob-app/static/js/main.015621e6.js",
+    "main.css": "/byob-app/static/css/main.73d1b038.css",
+    "main.js": "/byob-app/static/js/main.d3eaacab.js",
+    "static/media/Nunito-VariableFont_wght.ttf": "/byob-app/static/media/Nunito-VariableFont_wght.c0f0807a40aebdc41b40.ttf",
     "index.html": "/byob-app/index.html",
-    "main.40ef0cb8.css.map": "/byob-app/static/css/main.40ef0cb8.css.map",
-    "main.015621e6.js.map": "/byob-app/static/js/main.015621e6.js.map"
+    "main.73d1b038.css.map": "/byob-app/static/css/main.73d1b038.css.map",
+    "main.d3eaacab.js.map": "/byob-app/static/js/main.d3eaacab.js.map"
   },
   "entrypoints": [
-    "static/css/main.40ef0cb8.css",
-    "static/js/main.015621e6.js"
+    "static/css/main.73d1b038.css",
+    "static/js/main.d3eaacab.js"
   ]
 }
